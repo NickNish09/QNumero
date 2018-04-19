@@ -1,2 +1,21 @@
-<h1>Main#index</h1>
-<p>Find me in app/views/main/index.html.erb</p>
+<%= link_to "Nova sala",new_room_path %>
+
+<h1>Rooms</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @rooms.each do |room| %>
+    <tr>
+      <td><%= room.name %></td>
+      <td><%= link_to 'Entrar', room %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
