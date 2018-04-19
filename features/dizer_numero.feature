@@ -8,3 +8,9 @@ Funcionalidade: Dizer número
   Eu quero poder digitar um número na sala
 
   Cenario: Colocar um número
+    Dado que eu esteja em uma sala
+    Quando eu preencher o campo para adivinhar numero com:
+      |nome|nicholas|
+      |chute|26     |
+    E clicar no link "Chutar"
+    Então devo ver meu nome numa tabela com meu palpite escondido
